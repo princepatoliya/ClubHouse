@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container">
+    <!-- Profile image -->
+    <div class="bg-white shadow rounded overflow-hidden" >
+        <div class="px-4 pt-0 pb-4 cover">
+            <div class="media align-items-end profile-head">
+                <div class="profile mr-3 profile-image mt-2">
+                    <img class="rounded-circle mb-2 img-thumbnail" src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="">
+                </div>
+                <div>
+                    <h1>Selin Jodhani</h1>
+                    <p class="text-gray-700 text-md"> <i class="fas fa-at mr-2"></i>SelinJodhani</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="py-4">
+        <div class="container" style="width: 1000px;">
+            <div class="row mb-5">
+                
+                <div class="col-lg-6 col-sm-8 mb-4 hover-animate">
+                <div class="card shadow border-0" class="homeroomcard">
+                    <div class="card-body">
+                    <p class="my-2" class="roomname" style="font-size: 13px;">SENSE OF JUSTIC <span><i class="fas fa-home fa-xm" style="color: #00AC61;"></i></span></p>
+                    <p class="my-2 text-muted text-sm" >
+                        LIFE OF MODERATORS(journey Experience, Inspiration)
+                    </p>
+                    <p class="my-2 text-muted text-sm">
+                        <span>Hosted by </span><span>Jeet Patel <i class="fas fa-comment-dots"></i></span>
+                    </p>
+                    <p class="my-2 text-xs">
+                        <span>Jeet Patel <i class="far fa-comment-dots"></i></span>
+                    </p>
+                    
+                    <p class="text-gray-700 text-sm my-2"> 1 <i class="fas fa-user"></i> <spam>/</spam> <span>0</span> <i class="far fa-comment-dots"></i>  
+                        <span class="float-right"><i class="fas fa-person-booth fa-2x"></i></span>
+                    </p>
+                    
+                    </div>
+                </div>
+                </div>
+            
+            </div>
+        </div>
+    </section>
+
+</div>
+
+{% endblock %}

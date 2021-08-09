@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+{% include 'messages.html' %}
+
+  <section class="py-4">
+    <div class="container" style="width: 1000px;">
+      <div class="row mb-5" id="roomdetail">
+        <input type="hidden" id="slug" name="slug" value="{{slug}}">
+      </div>
+    </div>
+  </section>
+
+  <script src="{% static 'js/room.js' %}"></script>
+
+  {% endblock %}

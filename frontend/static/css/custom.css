@@ -1,0 +1,150 @@
+.pointer {cursor: pointer;}
+a{
+	text-decoration: none;
+}
+body{
+	background-color: #f2f0e4 !important;
+
+}
+.homeroomcard{
+	width: 436px;
+}
+
+hr.solid {
+    border-top: 1px solid #6c757d;
+}
+
+.enterroomicon{
+	color: #242B2E;
+}
+
+.enterroomicon:hover{
+	color: #A77B06;
+}
+
+.user-logo{
+	height: 60px;
+	width: 60px;
+	margin: 6px;
+	border: 1px solid #6c757d;
+}
+
+.room-leave:hover{
+	color: #B4161B;
+}
+
+.room-mute:hover{
+	color: #B4161B;
+}
+
+.room-unmute:hover{
+	color: green;
+}
+
+/* navbar */
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+
+#navigation {
+	margin-top: 1rem;
+	color: #242B2E;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#navigation a {
+	text-decoration: none;
+	font-size: 1.125rem;
+	display: inline-block;
+	padding: .375em 1em;
+	border-radius: 3px;
+	color: inherit;
+	
+}
+
+nav a:hover {
+	background-color:#CAD5E2;
+}
+
+
+/* navbar over */
+
+/* register page */
+
+.emptymessage{
+	color: red;
+}
+
+.auth-button{
+	background-color: #A77B06;
+	color: white;
+}
+
+
+
+
+/* room description */
+#roomtitlefield, #roomdescriptionfield{
+	font-weight: bold;
+	color: black;
+	height: 82px !important;
+	width: 100%;
+	resize: none;
+	border: 0;
+	font-size: 30px;
+}
+
+
+#roomtitlefield, #roomdescriptionfield:focus{
+	border-color: none;
+	box-shadow: none;
+	outline: 0 none;
+}
+
+.cancel-roomdescription{
+	position: absolute;
+	font-size: 20px;
+	cursor: pointer;
+	color: #5B54FA;
+	right: -20px;
+    top: 22px;
+}
+
+.cancel-roomdescription:hover{
+	color: #B4161B;
+}
+
+.circleBase {
+    border-radius: 50%;
+    behavior: url(PIE.htc); /* remove if you don't care about IE8 */
+}
+
+.video {
+    width: 150px;
+    height: 150px;
+	margin: 6px;
+    background: white;
+    border: 1px solid black;
+}
+
+/* room description over */
+
+
+/* ---------------profile-page-------------------- */
+.profile-image{
+	width: 250px;
+	height: 250px;
+}
+

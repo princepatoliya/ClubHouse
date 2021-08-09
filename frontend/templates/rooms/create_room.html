@@ -1,0 +1,61 @@
+{% extends 'base.html'%}
+{% load static %}
+{% block content %}
+
+<div class="container">
+	<div class="form-group">
+
+		<form class="pt-5 mb-5 pb-5">
+			<div class="row align-items-center">
+				<div class="col text-right">
+			        <span onclick = "create_room()" class="btn btn-outline-warning" ><i class="fas fa-door-open"></i>Create Room</span>					
+				</div>
+			</div>
+			
+			<div class="row">
+				<div class="col-md-12 mb-2">
+					<div class="col text-left">
+						<span onclick = "adddescriptionfield()" id="adddescriptionebtn" class="btn btn-outline-dark mt-4 pt-2 pb-2 ">Add Description</span>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="row">
+				<div class="col-md-12 mb-1">
+					<textarea class="form-control" maxlength="50" id="roomtitlefield" rows="1" placeholder="Title..." name="title" style="background-color:#f2f0e4;"></textarea>
+				</div>
+			</div>
+			
+			<div class="row" id="roomdescription">
+				<div class="col-md-12 mb-1">
+					<textarea class="form-control" maxlength="100" id="roomdescriptionfield" rows="2" placeholder="Description (Optional)" name="description" style="background-color:#f2f0e4;"></textarea>
+                    <div class="cancel-roomdescription"><i class="fas fa-times"></i></div>
+                </div>
+			</div>		
+		</form>
+
+	</div>
+	
+</div>
+<script>
+
+	$(document).ready(function() {
+		$("#roomdescription").hide();
+	}); 
+
+    function adddescriptionfield(){
+        $("#roomdescription").show();
+        $("#adddescriptionebtn").hide();
+    }
+
+    $(".cancel-roomdescription").click(function(){
+        $("#roomdescription").hide();
+        $("#adddescriptionebtn").show();
+    });
+
+</script>
+
+<script src="{% static 'js/create_room.js' %}"></script>
+
+{% endblock %}
