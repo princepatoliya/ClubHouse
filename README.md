@@ -1,4 +1,4 @@
-# ClubHouse (ON GOING)
+# ClubHouse (ON GOING) (Maybe not all functionality will be working 100%.)
 ---
 Django REST, MySQL, JavaScript, jQuery [July-2021 (On Going)]
 - Audio-Chat Social Networking App
